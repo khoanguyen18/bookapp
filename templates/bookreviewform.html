@@ -1,0 +1,17 @@
+<form class="bookForm" name="reviewBookForm" autocomplete="off" ng-submit="addReview(review, bookId)">
+    <fieldset>
+        <legend>Add a Review</legend>
+        <div class="form-group">
+            <input placeholder="Title" name="title" ng-model="review.title" required maxlength=20/>
+        </div>
+        <div class="form-group">
+            <textarea style="resize:none" placeholder="Review" name="review" ng-model="review.comment" required maxlength=100/></textarea>
+        </div>
+        <div class="form-group">
+           <div ng-init="rating = star.rating + 1"></div>
+           <div star-rating rating-value="rating" data-max="5"></div>
+        </div>
+        <button type="submit">Add a Review</button>
+        <a href="/">Cancel</a>
+    </fieldset>
+</form>

@@ -1,0 +1,17 @@
+<form class="bookForm" name="bookForm" autocomplete="off" ng-submit="addBook(book)">
+    <fieldset>
+        <legend>Add a Book</legend>
+        <div class="form-group">
+            <input placeholder="Title" name="title" ng-model="book.title" required maxlength=20/>
+        </div>
+        <div class="form-group">
+            <input placeholder="Author" name="author" ng-model="book.author" required maxlength=20/>
+        </div>
+        <div class="form-group">
+            <input placeholder="Image Url" name="imageUrl" ng-model="book.imgUrl" required />
+        </div>
+       
+        <button type="submit">Add Book</button>
+        <a href="/">Cancel</a>
+    </fieldset>
+</form>

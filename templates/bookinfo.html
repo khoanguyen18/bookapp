@@ -1,0 +1,12 @@
+<div class="bookComponent withBookCover" ng-repeat="(key, book) in bookList | orderObjectBy:'title'">
+    <!-- assume book cover is resized appropriately on the server to fit the UI. this helps with performance -->
+    <img ng-src="{{book.imgUrl}}" class="bookCover" ng-alt="{{book.title}} bookcover" />
+    <div class="bookComponentContent">
+        <p class="bookTitle">{{book.title}}</p>
+        <p class="author">By {{book.author}}</p>
+    </div>
+    <footer class="bookComponentFooter">
+        <a href="/">free sample</a>
+        <a ng-href="/#/book/review/{{key}}" class="primaryAction">review</a>
+    </footer>
+</div>

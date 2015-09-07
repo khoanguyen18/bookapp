@@ -1,0 +1,14 @@
+{
+    "elpooch": {
+        "id": 1,
+        "title": "El Pooch",
+        "author": "Alex Nelson",
+        "imgUrl" : "assets/images/pooch.png"
+    },
+    "theflight": {
+        "id": 2,
+        "title": "The Flight",
+        "author": "Scott Masterson",
+        "imgUrl" : "assets/images/flight.png"
+    }
+}

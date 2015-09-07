@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="ngBookApp">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-control" content="no-store">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <title>Take home solution</title>
+        <!-- Choosing to use normalization over reset stylesheets -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+
+    <body>
+        <div id="mainContent" class="mainContent" ng-controller="mainController">
+            <ng-include src="'templates/header.html'"></ng-include>
+            <div class="container" ui-view></div>
+
+            <!-- masking -->
+            <div id="mask" class="mask" ng-class="isActive ? 'is-active': ''"></div>
+            
+        </div>
+        <!-- Angular CDN -->
+        <script src="assets/js/vendor/angular/angular.js"></script>
+        <script src="assets/js/vendor/angular/angular-ui-router.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/bookservice.js"></script>
+    </body>
+</html>

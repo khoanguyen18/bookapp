@@ -1,0 +1,20 @@
+<div class="reviews">
+    <header>
+        <h3>User Reviews for {{bookList.title}}</h3>
+    </header>
+    <form>
+        <select ng-model="sortBy" ng-change="sortBookDetails()">
+            <option disabled value="">Sort By</option>
+
+            <option ng-value="key" ng-repeat="(key, value) in sortKeyValues">{{value}}</option>
+
+        </select>
+    </form>
+    <ul>
+        <li class="details" ng-repeat="(key, book) in bookDetails">
+            <p>Title of Review: {{book.title}}</p>
+            <p>Review: {{book.comment}}</p>
+            <p>Rating: {{book.rating}}</p>
+        </li>
+        <ul>
+</div>

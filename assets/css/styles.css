@@ -1,0 +1,331 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainContent {
+    background-color: #dcdcdc;
+    padding: 10px;
+    position: relative;
+    top: 63px;
+}
+
+.mainHeader {
+    background-color: #eb1561;
+    color: #fff;
+    font-size: 20px;
+    left: 0;
+    padding: 0 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.mainHeader a:visited,
+.mainHeader a:hover {
+    color: white;
+}
+
+.navIcon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    padding-right: 20px;
+    width: 24px;
+}
+
+.menuIcon {
+    background-image: url('/assets/images/ic_menu_24px.svg');
+}
+
+.closeIcon {
+    background-image: url('/assets/images/ic_close_24px.svg');
+}
+
+.nav a {
+    border-bottom: 1px solid #b8b8b8;
+    display: block;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.nav a,
+.bookComponentFooter a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #fff;
+    display: none;
+    left: 0;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 63px;
+    right: 0;
+    z-index: 2;
+}
+
+.nav.is-active {
+    display: block;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.bookComponentContent {
+    padding: 20px;
+}
+
+.bookComponentContent p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.bookTitle,
+.bookComponentHeader {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bookComponent {
+    background-color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.welcome .bookComponentHeader {
+    color: #eb1561;
+}
+
+.welcome .bookComponentContent h3 {
+    font-weight: normal;
+}
+
+.welcome .bookComponentContent {
+    color: #2f2f2f;
+    height: 120px;
+    padding: 10px 20px 10px 20px;
+}
+
+.bookComponentFooter {
+    border-top: 1px solid #b8b8b8;
+    padding: 10px 20px;
+}
+
+.bookComponentFooter a {
+    padding-right: 20px;
+    /* using text-transform here but for internationalization it might be better to have the strings and translated strings contain the proper casing
+    */
+    text-transform: uppercase;
+}
+
+.bookComponentFooter .primaryAction {
+    color: #ffac30;
+}
+
+.bookComponent.welcome.hide {
+    display: none;
+}
+
+.bookCover {
+    float: left;
+    /* use a consistent width and height for all the bookCover images */
+    height: 115px;
+    width: 80px;
+}
+
+.bookComponentContent .author {
+    color: #757575;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.withBookCover .bookComponentContent,
+.withBookCover .bookComponentFooter {
+    margin-left: 80px;
+}
+
+.bookComponentHeader.splash {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.bookComponentHeader.splash .title {
+    bottom: 0;
+    color: #fff;
+    padding: 0 20px;
+    position: absolute;
+}
+
+.mask {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.mask.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.bookForm {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.bookForm input {
+    width: 175px;
+}
+
+form.bookForm .form-group {
+    margin-bottom: 10px;
+}
+
+form.bookForm a:visited,
+form.bookForm a:hover {
+    color: black;
+}
+
+form.bookForm button {
+    background: #E27575;
+    border: none;
+    padding: 5px 5px;
+    color: #FFF;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form.bookForm button.cancel {
+    background: #E27575;
+    border: none;
+    padding: 5px 5px;
+    color: #FFF;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Stars */
+
+.starRating {
+    margin: 0;
+    padding: 0;
+    color: #a9a9a9;
+}
+
+.starRating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.starRating .filled {
+    color: #eb1561;
+}
+
+
+/* End Stars */
+
+.reviews {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.reviews ul {
+    padding: 0;
+}
+
+.reviews header {
+    text-decoration: underline;
+}
+
+.reviews li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.reviews li:after {
+    content: "____";
+}
+
+.reviews p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .mainContent {
+        margin: 0 auto;
+        max-width: 1140px;
+        overflow: hidden;
+        padding-top: 0;
+        top: 0;
+        width: 85%;
+    }
+    .navIcon {
+        display: none;
+    }
+    nav.nav li {
+        float: left;
+    }
+    nav.nav:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .mainHeader {
+        margin: 0 -10px;
+        overflow: auto;
+        position: static;
+    }
+    .nav {
+        display: block;
+        margin-left: -10px;
+        margin-right: -10px;
+        position: static;
+        top: 0;
+    }
+    .nav a {
+        border-bottom: none;
+        display: inline-block;
+    }
+    .col1,
+    .col2 {
+        width: 49%;
+    }
+    .col1 {
+        float: left;
+    }
+    .col2 {
+        float: right;
+    }
+    .mask,
+    .mask.is-active {
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+<header class="mainHeader">
+    <p><span class="navIcon menuIcon" ng-class="isActive ? 'closeIcon': 'menuIcon'" ng-click="toggleMenu();">&nbsp;</span><a href="/">My Books</a></p>
+</header>
+<nav class="nav" ng-class="isActive ? 'is-active': ''" role="navigation">
+    <ul>
+        <li ng-repeat="(key, book) in bookList | orderObjectBy:'title'">
+            <a ng-href="/#/book/{{key}}" ng-click="menuItemClicked()">{{book.title}}</a>
+        </li>
+        <li><a href="/" ng-click="menuItemClicked()">Top 10 Australian Beaches</a></li>
+    </ul>
+</nav>

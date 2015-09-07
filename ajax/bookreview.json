@@ -1,0 +1,27 @@
+{
+    "elpooch": [
+        {
+            "title": "Friend Amigo",
+            "comment": "This Book is cool",
+            "id": 1,
+            "rating": 4,
+            "timestamp": 1441650469
+        },
+        {
+            "title": "Amigo's",
+            "comment": "Eh this book is alright!",
+            "id": 2,
+            "rating": 3,
+            "timestamp": 1441650400
+        }
+    ],
+    "theflight": [
+        {
+            "title": "hmm",
+            "comment": "WOW",
+            "id": 3,
+            "rating": 5,
+            "timestamp": 1441650400
+        }
+    ]
+}
