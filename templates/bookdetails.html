@@ -5,7 +5,6 @@
     <form>
         <select ng-model="sortBy" ng-change="sortBookDetails()">
             <option disabled value="">Sort By</option>
-
             <option ng-value="key" ng-repeat="(key, value) in sortKeyValues">{{value}}</option>
 
         </select>
